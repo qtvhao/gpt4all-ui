@@ -1,6 +1,4 @@
-FROM nvidia/cuda:12.1.0-base-ubuntu22.04
-
-RUN apt update && apt install python3 python3.10-venv python3-pip -y
+FROM pytorch/pytorch:latest
 
 WORKDIR /srv
 COPY ./requirements.txt .
