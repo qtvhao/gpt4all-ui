@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM pytorch/pytorch:latest
 
 WORKDIR /srv
 COPY ./requirements.txt .
